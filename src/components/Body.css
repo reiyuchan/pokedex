@@ -1,0 +1,56 @@
+.randomPokemon {
+  display: flex;
+  justify-self: center;
+  background-color: #111;
+  height: 20rem;
+  width: 15rem;
+  border-radius: 10px;
+  color: #f6f6;
+  text-align: center;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 5rem;
+  box-shadow: -3px 5px 20px 5px orange;
+  animation-name: chColorBoxShadow;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.pokemon {
+  margin-top: 2rem;
+  user-select: none;
+}
+
+.genbtn {
+  cursor: pointer;
+  width: 4rem;
+  height: 2rem;
+  text-align: center;
+  background-color: orange;
+  margin: auto;
+  border-style: none;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  user-select: none;
+}
+
+.genbtn:hover {
+  background-color: rgb(245, 208, 140);
+}
+
+.genbtn:active {
+  background-color: brown;
+}
+
+@keyframes chColorBoxShadow {
+  0% {
+    box-shadow: -3px 5px 20px 5px orange;
+  }
+  50% {
+    box-shadow: -3px 5px 20px 5px goldenrod;
+  }
+  100% {
+    box-shadow: -3px 5px 20px 5px brown;
+  }
+}
