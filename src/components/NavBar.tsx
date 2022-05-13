@@ -13,7 +13,7 @@ const NavBar = () => {
                 </div>
 
             </nav>
-            <video id="bgaudio" src={(PokemonTheme)} playsInline autoPlay loop muted></video>
+            <audio id="bgaudio" src={(PokemonTheme)} playsInline autoPlay loop muted></audio>
         </div>
     )
 }
