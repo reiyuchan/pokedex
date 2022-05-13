@@ -1,13 +1,13 @@
 const toggleMute = () => {
   const textChange = document.getElementById("toggleMuted") as HTMLDivElement;
-  const video = document.getElementById("bgaudio") as HTMLVideoElement;
-
+  const audio = document.getElementById("bgaudio") as HTMLAudioElement;
   if (textChange.textContent === "Unmute") {
     textChange.textContent = "Mute";
-    video.muted = false;
+    audio.muted = false;
+    audio.play();
   } else {
     textChange.textContent = "Unmute";
-    video.muted = true;
+    audio.muted = true;
   }
 };
 

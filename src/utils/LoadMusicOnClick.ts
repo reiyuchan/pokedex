@@ -1,10 +1,13 @@
+import { HtmlHTMLAttributes } from "react";
+
 const LoadMusicOnClick  = () => {
-    const video = document.getElementById('bgaudio') as HTMLVideoElement;
+    const audio = document.getElementById('bgaudio') as HTMLAudioElement;
     const textChange = document.getElementById('toggleMuted') as HTMLDivElement;
     
     const autoplay = () => {
-        if (video.muted) {
-            video.muted = false;
+        if (audio.muted) {
+            audio.muted = false;
+            audio.play();
             textChange.textContent = 'Mute';
             window.removeEventListener('click', autoplay);
         }
