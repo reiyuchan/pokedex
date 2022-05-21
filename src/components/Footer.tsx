@@ -1,11 +1,10 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import './Footer.css'
+import whiteHeartIcon from '/assets/whiteheart.png';
 
 const Footer = () => {
     return (
         <div>
-            <footer>Made with 🤍 using PokeAPI <br/><br/> ©reiyuchan</footer>
+            <footer>Made with <img style={{ position: 'relative', width: '15px', top: '2.5px' }} src={ whiteHeartIcon } alt="heart icon" /> using PokeAPI <br /><br /> ©reiyuchan</footer>
         </div>
     )
 }
