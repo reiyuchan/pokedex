@@ -8,7 +8,11 @@ const pauseAudioUnfocus = () => {
           audio.pause();
       }
       else
-          audio.play();
+      {
+        if (textChange.textContent === "Unmute" && audio.muted === true) return;
+        textChange.textContent = "Mute";
+        audio.play();
+      }
   });
 };
 
